@@ -19,16 +19,16 @@ class UpFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val background = view.findViewById<FrameLayout>(R.id.fragment_background)
-        arguments?.getInt(COLOR)?.let { background.setBackgroundColor(it) }
+        arguments?.getInt(COLOR_KEY)?.let { background.setBackgroundColor(it) }
     }
 
     companion object {
-        private val COLOR = "color"
+        private val COLOR_KEY = "color"
 
         fun newInstance(color: Int): UpFragment {
             val fragment = UpFragment()
             val args: Bundle = Bundle()
-            args.putInt(COLOR, color)
+            args.putInt(COLOR_KEY, color)
             fragment.arguments = args
             return fragment
         }
