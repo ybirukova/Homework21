@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Homework 21</string>
+    <string name="choose_color">Choose the color:</string>
+
+    <string-array name="choice_of_the_color">
+        <item>-nothing selected-</item>
+        <item>dark gray</item>
+        <item>light gray</item>
+        <item>pink</item>
+        <item>green</item>
+        <item>blue</item>
+    </string-array>
 </resources>
